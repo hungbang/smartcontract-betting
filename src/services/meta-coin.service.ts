@@ -36,7 +36,7 @@ export class MetaCoinService {
   		    observer.complete()
   		  })
   		  .catch(e => {
-  		    console.log(e);
+  		    console.log("------"+e);
   		    observer.error(e)
   		  });
   	})
