@@ -25,6 +25,7 @@ export class MetaCoinService {
   		this.MetaCoin
   		  .deployed()
   		  .then(instance => {
+					console.log("====instance: "+ instance)
   		    meta = instance;
           //we use call here so the call doesn't try and write, making it free
   		    return meta.getBalance.call(account, {
